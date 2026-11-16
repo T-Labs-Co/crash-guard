@@ -37,8 +37,8 @@ class MailNotificationChannel extends Mailable
         $report = $this->report;
 
         return new Content(
-            /* @phpstan-ignore argumentType */
-            markdown: 'crash-guard::mail.crash-report',
+            /* @phpstan-ignore-next-line */
+            markdown: $this->viewName(),
             with: [
                 'level' => strtoupper($report->level),
                 'title' => $report->title,
@@ -61,5 +61,10 @@ class MailNotificationChannel extends Mailable
                     : (is_string($report->context) ? $report->context : null),
             ],
         );
+    }
+
+    private function viewName(): string
+    {
+        return 'crash-guard::mail.crash-report';
     }
 }
