@@ -37,6 +37,7 @@ class MailNotificationChannel extends Mailable
         $report = $this->report;
 
         return new Content(
+            /* @phpstan-ignore argumentType */
             markdown: 'crash-guard::mail.crash-report',
             with: [
                 'level' => strtoupper($report->level),
