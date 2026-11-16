@@ -653,4 +653,23 @@ src/
 
 ## License
 
-GPL-3.0-only — © DBCSoft Inc
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+## Quality & Development Practices
+
+This package is developed following Laravel best practices, with a strong focus on reliability, maintainability, and code quality.
+
+- 🧩 **Laravel Best Practices:** Follows established Laravel conventions and recommended design principles.
+- ✅ **Comprehensive Test Coverage:** Features are covered by unit and integration tests using Pest PHP.
+- 🔍 **Static Analysis:** Validated with PHPStan Level 8 using Larastan to catch potential type errors and enforce strict typing.
+- 🤖 **AI-Assisted Development:** AI assistants support development, analysis, and code quality improvements.
+- 👨‍💻 **Senior Engineer Review:** All changes are carefully reviewed by a senior engineer before each release.
+
+## Credits
+
+- **Ty Huynh** ([@ty-huynh](https://github.com/ty-huynh)) — [tyhuynh.id.vn](https://tyhuynh.id.vn)  
+  15+ years · Senior Software Engineer (PHP/Laravel) & Technical Lead
+
+If you find this package useful, consider buying me a coffee:
+
+[![Buy me a coffee](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-%23464643?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/tyhuynh)
