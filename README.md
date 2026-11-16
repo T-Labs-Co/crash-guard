@@ -1,5 +1,11 @@
 # CrashGuard
 
+[![Tests](https://github.com/t-labs-co/crash-guard/actions/workflows/tests.yml/badge.svg)](https://github.com/t-labs-co/crash-guard/actions/workflows/tests.yml)
+[![Static Analysis](https://github.com/t-labs-co/crash-guard/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/t-labs-co/crash-guard/actions/workflows/static-analysis.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PHP Version](https://img.shields.io/badge/php-%5E8.4-8892BF.svg)](https://php.net)
+[![Laravel Version](https://img.shields.io/badge/laravel-%5E12.0%20%7C%20%5E13.0-FF2D20.svg)](https://laravel.com)
+
 Lightweight exception capture, deduplication, and notification for Laravel — with a circuit breaker and full report lifecycle.
 
 CrashGuard captures exceptions (or plain string messages), deduplicates them by fingerprint, persists them to the database, and dispatches queued notifications via Slack and/or Mail. It ships with a circuit breaker to prevent alert floods, PHP 8 attribute-based exception classification, a `ReportContextDTO` for typed context, and a complete report lifecycle (resolve, ignore, snooze).
@@ -22,6 +28,12 @@ CrashGuard captures exceptions (or plain string messages), deduplicates them by 
 - **Built-in scheduling** — optional auto-registration of the prune command
 - **Artisan commands** — `crash-guard:help`, `crash-guard:test`, `crash-guard:prune`, `crash-guard:reset`, `crash-guard:status`
 - **DDD architecture** — clean separation under `Core/Reporting/{Domain,Application,Infrastructure}/`
+
+---
+
+## Documentation
+
+- **[Usage Examples](docs/usage-examples.md)** — Comprehensive, real-world examples covering all features: helper function, facade, attributes, interfaces, context DTO, report lifecycle, circuit breaker, custom channels, Artisan commands, and more.
 
 ---
 
