@@ -1,0 +1,76 @@
+{
+    "name": "t-labs-co/crash-guard",
+    "description": "Lightweight exception capture, deduplication & notification for Laravel — with circuit breaker and full report lifecycle.",
+    "keywords": [
+        "laravel",
+        "php",
+        "exception-handling",
+        "error-reporting",
+        "slack",
+        "notifications",
+        "circuit-breaker"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ty Huynh",
+            "email": "hongty.huynh@gmail.com",
+            "homepage": "https://tyhuynh.id.vn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^12|^13",
+        "illuminate/database": "^12|^13",
+        "illuminate/queue": "^12|^13",
+        "illuminate/mail": "^12|^13",
+        "illuminate/http": "^12|^13",
+        "illuminate/cache": "^12|^13",
+        "illuminate/log": "^12|^13"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3",
+        "laravel/pint": "^1",
+        "orchestra/testbench": "^10|^11",
+        "pestphp/pest": "^4|^5",
+        "pestphp/pest-plugin-laravel": "^4|^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TLabsCo\\CrashGuard\\": "src/"
+        },
+        "files": [
+            "src/Support/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TLabsCo\\CrashGuard\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --parallel",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TLabsCo\\CrashGuard\\Providers\\CrashGuardServiceProvider"
+            ],
+            "aliases": {
+                "CrashGuard": "TLabsCo\\CrashGuard\\Facades\\CrashGuard"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
