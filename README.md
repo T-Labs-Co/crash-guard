@@ -53,7 +53,7 @@ The package is auto-discovered via Laravel's package discovery. Add it to your `
     "repositories": [
         {
             "type": "path",
-            "url": "packages/dbcsoft-labs/crash-guard"
+            "url": "packages/t-labs-co/crash-guard"
         }
     ]
 }
@@ -62,7 +62,7 @@ The package is auto-discovered via Laravel's package discovery. Add it to your `
 Then require it:
 
 ```bash
-composer require dbcsoft-labs/crash-guard
+composer require t-labs-co/crash-guard
 ```
 
 Run the migrations:
