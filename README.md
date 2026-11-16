@@ -34,6 +34,7 @@ CrashGuard captures exceptions (or plain string messages), deduplicates them by 
 ## Documentation
 
 - **[Usage Examples](docs/usage-examples.md)** — Comprehensive, real-world examples covering all features: helper function, facade, attributes, interfaces, context DTO, report lifecycle, circuit breaker, custom channels, Artisan commands, and more.
+- **[Testing with Fresh Laravel](docs/testing-with-fresh-laravel.md)** — Step-by-step guide to verifying CrashGuard with a fresh Laravel 13 project, including Slack and Mail (Mailpit) notification setup, exception handler integration, and database verification.
 
 ---
 
